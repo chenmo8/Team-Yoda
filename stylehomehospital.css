@@ -1,0 +1,45 @@
+html {
+  background-image: linear-gradient(to top, #30cfd0 05%, #330867 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-
+}
+
+.container-left {
+  width: 600px;
+  height: 780px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  background-color: white;
+  margin-left:30px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.container-right {
+  width: 600px;
+  height: 780px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  background-color: white;
+  
+  margin-right:30px;
+  margin-left:750px;
+}
+
+.logout {
+
+	top: 1000px;
+	left: 1000px;
+}
+
+
+

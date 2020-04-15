@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 
-<html> 
+<html>
+
 <body>
+
+	<head>
+		<link rel="stylesheet" href="stylehomehospital.css">
+		<title>Home Page</title>
+	</head>
+
+<div class="container-left">
+    <div class = "center">
 
     <h1>My Information</h1>
     
@@ -12,22 +21,52 @@
 
     <button onclick="document.location = 'Hospitaleditinfo.htm'">Edit Contact Information</button>
 
-    <h2>Inventory:</h2>
+    <h2>Supply Need:</h2>
+
+    <table style="width:100%">
+	    <tr>
+    <th>PPE Type</th>
+    <th>Current Amount</th>
+    <th>Amount Needed</th>
+  </tr>
+  <tr>
+    <td>N95 Masks</td>
+    <td>500,000</td>
+    <td>100,000</td>
+  </tr>
+  <tr>
+    <td>Hand Sanitizer</td>
+    <td>400,000 oz.</td>
+    <td>100,000 oz.</td>
+    </table>
     <button onclick="document.location = 'Hospitalinventory.htm'">Edit Inventory</button>
 
-    
-</body>
-<body>
+	</div>    
+
+<div class="container-right ">
     <h1>Pledges</h1>
-    
-    
-    <button onclick="document.location = 'Signupscreen.htm'">Logout</button>
 
+     <table style="width:100%">
+	    <tr>
+    <th>Name of Drive</th>
+    <th>Contact</th>
+    <th>PPE Type</th>
+    <th>Amount</th>
+    <th>Arrival Date</th>
+  </tr>
+  <tr>
+	  <td>Stanford PPE Drive</td>
+	  <td>maite@gmail.com</td>
+    <td>N95 Masks</td>
+    <td>100,000</td>
+    <td>April 1, 2021</td>
+  </tr> 
+    </table>
+
+</div>
+<div class ="logout">
+<button onclick="document.location = 'Signupscreen.htm'">Logout</button>
+</div>
 </body>
-
-
-
-
-
 
 </html>
