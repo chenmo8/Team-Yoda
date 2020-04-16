@@ -1,5 +1,5 @@
 html {
-  background-image: linear-gradient(to top, #30cfd0 05%, #330867 100%);
+  background-image: linear-gradient(to top, #cfe4e4, #595064 );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -8,12 +8,13 @@ html {
 
 .container-left {
   width: 600px;
-  height: 780px;
+  height: 600px;
   position: absolute;
   text-align: center;
   color: black;
   background-color: white;
   margin-left:30px;
+  bottom: 50px;
 }
 
 .center {
@@ -21,11 +22,19 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
+  
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
 
 .container-right {
   width: 600px;
-  height: 780px;
+  height: 600px;
   position: absolute;
   text-align: center;
   color: black;
