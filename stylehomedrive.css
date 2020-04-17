@@ -47,6 +47,7 @@ html {
   text-align: left;
 }
 
+
 h2{
   margin-left: 50px;
   color:black;
@@ -58,6 +59,13 @@ button {
     cursor: pointer;
     padding: 10px 18px;
     font-size: 40px;
+    font-family:"Arial";
+
+  }
+
+button2 {
+    border: none;
+    cursor: pointer;
     font-family:"Arial";
 
   }
@@ -131,6 +139,10 @@ button {
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+.search {
+  float: right;
 }
 
 .close:hover,
@@ -212,3 +224,37 @@ label, h1{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+
+.stacked-bar-graph {
+  width: 90%;
+  height: 38px;
+  color:#414042;
+  position: relative;
+  top: 0px;
+}
+span {
+  display: inline-block;
+  height:100%;
+  box-sizing: border-box;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  padding: 10px;
+
+}
+
+
+
+.bar-1 {
+  background: rgb(0, 16, 85);
+}
+
+.bar-2 {
+  background: rgb(90, 118, 160);
+}
+
+.bar-3 {
+  background: rgb(187, 0, 162);
+}
+  

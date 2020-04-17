@@ -13,14 +13,13 @@
     <div>
     <h1>My Information</h1>
     
-    <h2>Name:</h2>
-    <h2>Location:</h2>
-    <h2>Dropoff Information:</h2>
-    <h2>Contact Email/phone number:</h2>
+    <h2 id="nameold" >Name: </h2>
+    <h2 id="locationold" >Location:</h2>
+    <h2 id="dropoffold">Dropoff Info:</h2>
+    <h2 id="contactold">Email: </h2> 
 
-   <!-- Trigger/Open The Modal -->
+<!-- Trigger/Open The Modal -->
 <button id="myBtn">Edit Hospital Information</button>
-
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -28,17 +27,48 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form action="/action_page.php">
- 	<label for="fname">Edit Contact Information:</label>
-  	<input type="text" id="fname" name="fname"><br><br>
-	<button id="Submit">Submit</button>
-  </form>
+    <p>Edit Contact Name:</p>
+    <input type="text" value="Name" id="nam">
+    <button onclick="editinfoname()">Submit</button>
+    <p>Edit Location:</p>
+    <input type="text" value="Location" id="loc">
+    <button onclick="editinfolocal()">Submit</button>
+    <p>Edit Drop Off Instructions:</p>
+    <input type="text" value="Drop off instructions" id="instruct">
+    <button onclick="editinfodrop()">Submit</button>
+    <p>Edit Email:</p>
+    <input type="text" value="Email" id="contact">
+    <button onclick="editinfoemail()">Submit</button>
   </div>
 
-</div> 
-
+</div>
 <script>
-		// Get the modal
+  function editinfoemail() {
+    var contactText = document.getElementById("contact");
+    var element = document.getElementById("contactold");
+    element.innerHTML = "Email: " + contactText.value;
+  }
+
+  function editinfoname() {
+    var contactText = document.getElementById("nam");
+    var element = document.getElementById("nameold");
+    element.innerHTML = "Name: " + contactText.value;
+  }
+
+  function editinfodrop() {
+    var contactText = document.getElementById("instruct");
+    var element = document.getElementById("dropoffold");
+    element.innerHTML = "Dropoff Info: " + contactText.value;
+  }
+
+  function editinfolocal() {
+    var contactText = document.getElementById("loc");
+    var element = document.getElementById("locationold");
+    element.innerHTML = "Location: " + contactText.value;
+  }
+</script>
+<script>
+// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -47,7 +77,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -63,12 +93,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+</script>
 	</script>
-
-
     <h1>Supply Need:</h1>
 
-    <table style="width:100%" class "supplytable">
+    <table style="width:100%" class = "supplytable">
 	    <tr>
     <th>PPE Type</th>
     <th>Current Amount</th>
@@ -76,62 +105,33 @@ window.onclick = function(event) {
   </tr>
   <tr>
     <td>N95 Masks</td>
-    <td>500,000</td>
-    <td>100,000</td>
+    <td>1,000</td>
+    <td>2,000</td>
   </tr>
   <tr>
     <td>Hand Sanitizer</td>
     <td>400,000 oz.</td>
     <td>100,000 oz.</td>
+</tr>
+<tr>
+  <td>Surgical Masks</td>
+  <td>10,000</td>
+  <td>15,000</td>
+</tr>
+<tr>
+  <td>Goggles</td>
+  <td>200</td>
+  <td>500</td>
+</tr>
     </table>
-	
-    <button id="myBtn">Edit Inventory </button>
-
-
-<!-- The Modal -->
-<div id="myModal2" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <form action="/action_page.php">
- 	<label for="fname">Edit Contact Information:</label>
-  	<input type="text" id="fname" name="fname"><br><br>
-	<button id="Submit">Submit</button>
-  </form>
-  </div>
+    <div class = "bottom-left">
+  <button id="myBtn" onclick = "document.location = 'Hospitalinventory.htm'">Edit Inventory </button>
+</div>
 
 
 </div>
 
-<script>
-		// Get the modal
-var modal = document.getElementById("myModal2");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-	</script>
-	</div>    
 
 <div class="container-right ">
     <h1>Pledges</h1>

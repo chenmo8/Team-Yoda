@@ -45,24 +45,37 @@
    				<span class="close">&times;</span>
 				<h1>Sort By:</h1>
     				<form action="/action_page.php">
-					<input type="checkbox" id="Distance">
-  					<label for="Distance">Distance (Low to High)</label><br>
-					<input type="checkbox" id="Need">
-					<label for="Need">Need (High to Low Need)</label><br>
-
-					<input type="checkbox" id="PPE">
-
+					<div class="custom-select" style="width:200px;">
+						<select>
+						<option value="0">Need Level</option>
+						  <option value="1">High to low</option>
+						</select>
+				  </div>	
+					<div class="custom-select" style="width:200px;">
+						<select>
+							  <option value="0">Distance Radius</option>
+						  		<option value="1">10 mi</option>
+							  <option value="2">25 mi</option>
+							  <option value="3">50 mi</option>
+							  <option value="4">100 mi </option>
+						</select>
+				  </div>	
 					<div class="custom-select" style="width:200px;">
   						<select>
-   	 						<option value="0">Select PPE</option>
+   	 						<option value="0">PPE Type</option>
 							<option value="1">N95 Masks</option>
     							<option value="2">Hospital Gowns</option>
     							<option value="3">Latex Gloves</option>
-    
+								<option value="4">Goggles</option>
   						</select>
 					</div>
-					<button class = "search">Search</button>
-
+				</form>
+					<button class = "search" id ="search">Search</button>
+				<script>
+					search.onclick = function() {
+						modal.style.display = "none";
+					  }
+					</script> 
 					<script>
 						var x, i, j, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
