@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(to top, #cfe4e4, #595064 );
+    background-image: url("bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -16,8 +16,8 @@ html {
   }
 
   .default {
-    border-color: #e7e7e7;
-    color: black;
+    border-color: #ffffff;
+    color: grey;
   }
   
   .default:hover {
