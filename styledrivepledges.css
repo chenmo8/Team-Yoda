@@ -119,13 +119,13 @@ button {
 }
 
 h1{
-  margin-left: 50px;
+  margin-left: 40px;
   font-family:"Arial";
   font-size:70px; 
 }
 
 table {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .Pledged{
@@ -138,3 +138,35 @@ table {
 
 }
 
+  /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  margin-left:-10px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #80d0c7;
+  margin-right:50px;
+  text-align: center;
+  padding: 14px 16px;
+  font-family:Sans-serif;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
