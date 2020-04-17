@@ -43,7 +43,11 @@ html {
 }
 
 .logout {
-
+	color:#80d0c7;
 	top: 1000px;
 	left: 1000px;
+}
+
+.left_ {
+  margin-left:30px;
 }
