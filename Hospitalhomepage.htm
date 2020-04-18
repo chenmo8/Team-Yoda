@@ -128,53 +128,6 @@ window.onclick = function(event) {
 
 	    <button id="myBtn">Edit Inventory</button>
 
-<!-- The Modal -->
-<div id="inventmodal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Edit Contact Name:</p>
-    <input type="text" value="Name" id="nam">
-    <button onclick="editinfoname()">Submit</button>
-    <p>Edit Location:</p>
-    <input type="text" value="Location" id="loc">
-    <button onclick="editinfolocal()">Submit</button>
-    <p>Edit Drop Off Instructions:</p>
-    <input type="text" value="Drop off instructions" id="instruct">
-    <button onclick="editinfodrop()">Submit</button>
-    <p>Edit Email:</p>
-    <input type="text" value="Email" id="contact">
-    <button onclick="editinfoemail()">Submit</button>
-  </div>
-
-  <script>
-// Get the modal
-var modal = document.getElementById("inventmodal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 
 
@@ -198,9 +151,9 @@ window.onclick = function(event) {
   </tr>
   <tr>
 	  <td>Stanford PPE Drive</td>
-	  <td>maite@gmail.com</td>
+	  <td>PPEdrive@stanford.edu</td>
     <td>N95 Masks</td>
-    <td>100,000</td>
+    <td>1,000</td>
     <td>April 1, 2021</td>
   </tr> 
     </table>

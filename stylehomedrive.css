@@ -64,7 +64,7 @@ button {
   }
 
 button2 {
-    border: none;
+    border: line;
     cursor: pointer;
     font-family:"Arial";
 
@@ -265,15 +265,16 @@ span {
 
 
 .bar-1 {
-  background: rgb(0, 16, 85);
+  background: #13547a;
 }
 
+
 .bar-2 {
-  background: rgb(90, 118, 160);
+  background: #778899;
 }
 
 .bar-3 {
-  background: rgb(187, 0, 162);
+  background: #80d0c7;
 }
  
 h4{
